@@ -41,7 +41,7 @@ To run this project locally, follow these steps:
 
    npm run dev
 
-Open http://localhost:3000 to view the project in your browser.
+Open http://localhost:3000/inventory to view the project in your browser.
 
 ## Technologies Used
 
