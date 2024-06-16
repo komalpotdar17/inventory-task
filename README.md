@@ -1,36 +1,78 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+# Inventory and Order Management System
 
-First, run the development server:
+This project is a simplified inventory and manufacturing unit management system implemented using React with Next.js. It features functionalities for managing orders, items, and inventory, showcasing proficiency in frontend development, array/object manipulation, and user interface design.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Features
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Order List Page:**
+  - Display a list of orders with details such as ID, customer name, status, and item count.
+  - Filter orders by status (Pending, Completed).
+  - Sort orders by customer name and item count.
+  
+- **Order Details Page:**
+  - Show detailed information about a specific order, including items in the order, their quantities, and stock availability.
+  - Implement a button to mark an order as completed, updating its status accordingly.
+  
+- **Inventory Management Page:**
+  - Display a list of all items with their current stock levels.
+  - Filter items by stock availability (In Stock, Out of Stock).
+  - Implement functionality to add new items to the inventory, edit existing items, and delete items.
+  
+- **Styling and UX:**
+  - Utilize Tailwind CSS for responsive and user-friendly interface design.
+  - Incorporate components like modals, notifications, and loading indicators for enhanced user experience.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Setup Instructions
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+To run this project locally, follow these steps:
 
-## Learn More
+1. **Clone the repository:**
 
-To learn more about Next.js, take a look at the following resources:
+   git clone <repository-url>
+   cd inventory-task
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+2. **Install Dependencies:**
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+   npm install
 
-## Deploy on Vercel
+3. **Run the Development Server:**
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+   npm run dev
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Open http://localhost:3000 to view the project in your browser.
+
+## Technologies Used
+
+- **Next.js**: React framework for server-rendered applications.
+- **React**: JavaScript library for building user interfaces.
+- **Tailwind CSS**: Utility-first CSS framework for rapid UI development.
+- **JSON**: Data storage and manipulation using JSON files.
+
+## Folder Structure `inventory-task/`
+
+- **pages/**: Next.js page components
+  - `index.js`: Main page (Home)
+  - **orders/**
+    - `[id].js`: Dynamic order details page
+    - `index.js`: Orders list page
+  - `inventory.js`: Inventory management page
+  - ... Other pages as per project requirements
+  
+- **components/**: React components
+  - `OrderItem.js`: Component for rendering individual order items
+  - ... Other components used across pages
+  
+- **data/**: JSON data files (orders.json, items.json, etc.)
+  - `orders.json`
+  - `items.json`
+  
+- **styles/**: Global styles (e.g., Tailwind CSS, custom CSS)
+  - `globals.css`
+  
+- **public/**: Static assets (images, fonts, etc.)
+  - ...
+  
+- `README.md`: Project overview, setup instructions, and documentation
+- ...
